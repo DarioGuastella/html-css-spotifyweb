@@ -90,19 +90,43 @@
 
         </section>
     </main>
+    <!-- FOOTER START -->
     <footer class="d-flex align-icenter">
+        <!-- FOOTER LEFT -->
         <div class="footer-left d-flex align-icenter">
-            <img class="current-playing" src="img/sinister.jpeg" alt="">
+            <img class="current-playing pointer" src="img/sinister.jpeg" alt="">
             <span>
                 <h4>Sinister</h4>
                 <h5>Nome Brano</h5>
             </span>
             
-            <i class="fa-regular fa-heart" style="color: grey;"></i>
-            <i class="fa-regular fa-folder" style="color: grey;"></i>
+            <i class="fa-regular fa-heart pointer" style="color: grey;"></i>
+            <i class="fa-regular fa-folder pointer" style="color: grey;"></i>
 
         </div>
-        <div class="footer-center"></div>
+        <!-- FOOTER CENTER -->
+        <div class="footer-center d-flex align-icenter flex-col">
+            <div class="play-buttons">
+                <i class="fa-solid fa-shuffle pointer"></i>
+                <i class="fa-solid fa-backward-step pointer"></i>
+                <i id="play-button" class="fa-regular fa-circle-play pointer"></i>
+                <i class="fa-solid fa-forward-step pointer"></i>
+                <i class="fa-solid fa-rotate-right pointer"></i>
+
+            </div>
+            <div class="play-timeline d-flex">
+                <span><h5>0:25</h5></span>
+                <div class="grey-line pointer">
+                    
+                    <div class="lightgrey-line pointer">
+                        
+                        <div class="circle-line pointer"></div>
+                    </div>
+                </div>
+                <span><h5>4:35</h5></span>
+            </div>
+        </div>
+        <!-- FOOTER RIGHT -->
         <div class="footer-right"></div>
     </footer>
 </body>

@@ -13,6 +13,9 @@ body {
     flex-wrap: wrap;
 }
 
+/* POINTER */
+.pointer {cursor: pointer;}
+
 /*********************
  FLEX************
  ********************/
@@ -20,6 +23,7 @@ body {
  .d-flex {display: flex;}
  .wrapped {flex-wrap: wrap;}
  .align-icenter {align-items: center;}
+ .flex-col {flex-direction: column;}
 
  /* PADDING */
  
@@ -33,7 +37,7 @@ body {
 
 nav {
     background: #000000;
-    height: calc(100% - 90px);
+    height: calc(100% - 100px);
     width: 15rem;
 }
 
@@ -42,7 +46,7 @@ nav {
  ********************/
 
 main {
-    height: calc(100% - 90px);
+    height: calc(100% - 100px);
     width: calc(100% - 15rem);
     background: #141922;
     overflow-y: auto;
@@ -94,6 +98,7 @@ main {
     text-align: center;
     margin-right: 1em;
     margin-bottom: 1em;
+    cursor: pointer;
 }
 
 .container-card h4 {
@@ -137,8 +142,16 @@ main {
 
 footer {
     width: 100%;
-    height: 90px;
+    height: 100px;
     background: #282828;
+}
+
+/* LEFT */
+
+.footer-left {
+    height: 60%;
+    margin-left: 1em;
+    width: 20%;
 }
 
 .footer-left * {
@@ -167,7 +180,68 @@ footer {
     font-size: 20px;
 }
 
-.footer-left {
-    height: 60%;
-    margin-left: 1em;
+
+
+/* CENTER */
+
+.footer-center {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.play-buttons {
+    width: 50%;
+    text-align: center;
+    font-size: 1.6em;
+    height: 50%;
+    margin-top: 0.5em;
+}
+
+.play-buttons i {
+    padding: 0 15px;
+}
+
+#play-button {
+    font-size: 1.5em;
+    padding: 0 20px;
+}
+
+.play-timeline {
+    width: 60%;
+    margin-top: 0.5em;
+}
+
+.grey-line {
+    background-color: #5a5a5a;
+    width: 90%;
+    height: 6px;
+    border-radius: 25px;
+    align-self: center;
+    margin: 0 2em;
+}
+
+.lightgrey-line {
+    background-color: #c1c1c1;
+    width: 20%;
+    height: 6px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.circle-line {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: -4.5px;
+    left: 112px;
+}
+
+
+/* RIGHT */
+
+.footer-right {
+    width: 20%;
 }
