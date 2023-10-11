@@ -8,7 +8,48 @@
     <title>Spotify Test</title>
 </head>
 <body>
-    <nav>menu qui</nav>
+    <nav class="d-flex flex-col jcont-space-between">
+        <div class="top-nav">
+            <img class="logo" src="img/logo.svg" alt="Logo">
+            <div class="d-flex wrapped align-icenter nav-section">
+                <img class="top-nav-icon casa" src="img/home.svg" alt="home icon">
+                    <div class="p-1em nav-section-name">Home</div>
+            </div>
+            <div class="d-flex wrapped align-icenter nav-section t-grey">
+                <img class="top-nav-icon" src="img/search.svg" alt="home icon">
+                    <div class="p-1em nav-section-name">Cerca</div>
+            </div>
+            <div class="d-flex wrapped align-icenter nav-section t-grey">
+                <img class="top-nav-icon" src="img/libreria.svg" alt="home icon">
+                    <div class="p-1em nav-section-name">La tua Libreria</div>
+            </div>
+            
+            <ul>
+                <h4 class="playlist-title">PLAYLIST</h4>
+                <div class="d-flex btn-add align-icenter"><i class="fa-sharp fa-solid fa-square-plus"></i>Crea Playlist</div>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+            </ul>
+        </div>
+        <div class="bottom-nav">
+            <div class=" install-app">
+                <i class="fa-regular fa-circle-down" style="color: grey;"></i><h5 class="t-grey">Installa app</h5>
+            </div>
+            <hr class="t-grey">
+            <div class="d-flex align-icenter pb-1em pt-min2em">
+                <div class="user-circle-image">
+                    <img src="img/profile.svg" alt="Profile picture">
+                </div>
+                <h4>John Doe</h4>
+            </div>
+            
+        </div>
+    </nav>
     <main>
         <div class="call-to-action">
             <a href="#" class="btn">Effettua upgrade</a>
@@ -136,7 +177,6 @@
                     <div class="circle-vol pointer"></div>
                 </div>
             </div>
-
         </div>
     </footer>
 </body>

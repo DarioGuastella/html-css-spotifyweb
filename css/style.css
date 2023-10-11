@@ -31,7 +31,12 @@ body {
  .py-1em {padding: 1em 0;}
  .pb-1em {padding-bottom: 1em;}
  .pr-1em {padding-right: 1em;}
+ .p-1em {padding: 0.5em;}
+ .pt-min2em {padding-top: 1.5em;}
 
+ /* TEXT COLOR */
+
+ .t-grey {color: grey;}
 /*********************
  NAVIGATOR************
  ********************/
@@ -41,6 +46,87 @@ nav {
     height: calc(100% - 100px);
     width: 15rem;
 }
+
+.logo {
+    width: 80%;
+    padding: 1em;
+}
+
+.top-nav-icon {
+    width: 10%;
+}
+
+.nav-section {
+    margin-left: 1em;
+}
+
+.nav-section-name {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.playlist-title {
+    font-size: 0.8em;
+    padding-top: 2em;
+}
+
+.top-nav ul {
+    margin-left: 1em;
+}
+ul li {
+    list-style-type: none;
+    padding: 0.8em 0;
+    color: grey;
+    font-size: 0.8em;
+    font-weight: bold;
+    
+}
+ul h4 {
+    padding: 0.8em 0;
+}
+
+.btn-add i{
+    font-size: 3.5em;
+    margin-right: 0.6rem;
+}
+
+.btn-add {
+    color: grey;
+    margin-bottom: 1em;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.bottom-nav {
+    margin: 0 1em;
+}
+
+.user-circle-image {
+    background: gray;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 35px;
+    height: 35px;
+    margin-right: 1em;
+}
+
+.install-app h5 {
+    display: inline-block;
+}
+
+.install-app {
+    margin-bottom: 1em;
+}
+
+.fa-circle-down {
+    margin-right: 1em;
+}
+
+/* INCLUDES FOOTERS "li" */
+li i {
+    font-size: 3em;
+}
+
 
 /*********************
  MAIN************
