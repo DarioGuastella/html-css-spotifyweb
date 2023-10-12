@@ -146,11 +146,6 @@ li i {
     font-size: 3em;
 }
 
-
-/*********************
- MAIN************
- ********************/
-
  /* HOVER */
 
  .btn:hover {
@@ -188,8 +183,21 @@ li i {
     scale: 1.15;
  }
 
+ .box-image:hover #hover-btn {
+    display: block;
+ }
+
+ .box-image:hover .hover-color {
+    filter: brightness(0.6);
+ }
+
  /* FINE HOVER */
 
+ /*********************
+ MAIN************
+ ********************/
+
+ 
 main {
     height: calc(100% - 100px);
     width: calc(100% - 15rem);
@@ -244,6 +252,20 @@ main {
     margin-right: 1em;
     margin-bottom: 1em;
     cursor: pointer;
+}
+
+.box-image {
+    
+    position: relative;
+}
+
+#hover-btn {
+    position: absolute;
+    top: 58%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    scale: 4;
+    display: none;
 }
 
 .container-card h4 {
@@ -458,3 +480,4 @@ footer {
 .footer-icons {
     text-align: center;
 }
+
