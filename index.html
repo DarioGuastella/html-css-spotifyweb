@@ -10,42 +10,52 @@
 <body>
     <nav class="d-flex flex-col jcont-space-between">
         <div class="top-nav">
-            <img class="logo" src="img/logo.svg" alt="Logo">
+            <img class="logo pointer" src="img/logo.svg" alt="Logo">
             <div class="d-flex wrapped align-icenter nav-section">
                 <img class="top-nav-icon casa" src="img/home.svg" alt="home icon">
-                    <div class="p-1em nav-section-name">Home</div>
+                    <div class="p-1em nav-section-name pointer">Home</div>
             </div>
             <div class="d-flex wrapped align-icenter nav-section t-grey">
                 <img class="top-nav-icon" src="img/search.svg" alt="home icon">
-                    <div class="p-1em nav-section-name">Cerca</div>
+                    <div class="p-1em nav-section-name pointer">Cerca</div>
             </div>
             <div class="d-flex wrapped align-icenter nav-section t-grey">
                 <img class="top-nav-icon" src="img/libreria.svg" alt="home icon">
-                    <div class="p-1em nav-section-name">La tua Libreria</div>
+                    <div class="p-1em nav-section-name pointer">La tua Libreria</div>
             </div>
             
-            <ul>
+            <div class="add-playlist">
                 <h4 class="playlist-title">PLAYLIST</h4>
-                <div class="d-flex btn-add align-icenter"><i class="fa-sharp fa-solid fa-square-plus"></i>Crea Playlist</div>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
+                <div class="d-flex btn-add align-icenter">
+                    <i class="fa-sharp fa-solid fa-square-plus pointer"></i>
+                    <span class="pointer">Crea Playlist</span>
+                </div>
+            </div>
+            <ul>
+                <li class="pointer">Nome Playlist</li>
+                <li class="pointer">Nome Playlist</li>
+                <li class="pointer">Nome Playlist</li>
+                <li class="pointer">Nome Playlist</li>
+                <li class="pointer">Nome Playlist</li>
+                <li class="pointer">Nome Playlist</li>
+                <li class="pointer">Nome Playlist</li>
+                <li class="pointer">Nome Playlist</li>
+                <li class="pointer">Nome Playlist</li>
+                <li class="pointer">Nome Playlist</li>
+                <li class="pointer">Nome Playlist</li>
+                
             </ul>
         </div>
         <div class="bottom-nav">
-            <div class=" install-app">
+            <div class=" install-app pointer">
                 <i class="fa-regular fa-circle-down" style="color: grey;"></i><h5 class="t-grey">Installa app</h5>
             </div>
             <hr class="t-grey">
             <div class="d-flex align-icenter pb-1em pt-min2em">
-                <div class="user-circle-image">
+                <div class="user-circle-image pointer">
                     <img src="img/profile.svg" alt="Profile picture">
                 </div>
-                <h4>John Doe</h4>
+                <h4 class="pointer">John Doe</h4>
             </div>
             
         </div>
@@ -134,20 +144,35 @@
     <!-- FOOTER START -->
     <footer class="d-flex align-icenter">
         <!-- FOOTER LEFT -->
-        <div class="footer-left d-flex align-icenter">
+        <!-- <div class="footer-left d-flex align-icenter">
             <img class="current-playing pointer" src="img/sinister.jpeg" alt="">
-            <span>
+            <span class="track-name">
                 <h4>Sinister</h4>
                 <h5>Nome Brano</h5>
             </span>
             
-            <i class="fa-regular fa-heart pointer" style="color: grey;"></i>
-            <i class="fa-regular fa-folder pointer" style="color: grey;"></i>
-
+            <span>
+                <i class="fa-regular fa-heart pointer" style="color: grey;"></i>
+                <i class="fa-regular fa-folder pointer" style="color: grey;"></i>
+            </span>
+        </div> -->
+        <div class="footer-left d-flex align-icenter">
+            <div class="current-playing d-flex align-icenter">
+                <img class="pointer" src="img/sinister.jpeg" alt="">
+                <div class="artist-name">
+                    <h4>Sinister</h4>
+                    <h5 class="t-grey">Nome Brano</h5>
+                </div>
+            </div>
+            <div class="grey-vol-line pointer">
+                <div class="lightgrey-vol-line pointer">
+                    <div class="circle-vol pointer"></div>
+                </div>
+            </div>
         </div>
         <!-- FOOTER CENTER -->
         <div class="footer-center d-flex align-icenter flex-col">
-            <div class="play-buttons">
+            <div class="play-buttons d-flex align-icenter jcont-space-between">
                 <i class="fa-solid fa-shuffle pointer"></i>
                 <i class="fa-solid fa-backward-step pointer"></i>
                 <i id="play-button" class="fa-regular fa-circle-play pointer"></i>

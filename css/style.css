@@ -68,6 +68,7 @@ nav {
 .playlist-title {
     font-size: 0.8em;
     padding-top: 2em;
+    font-weight: 700;
 }
 
 .top-nav ul {
@@ -78,11 +79,16 @@ ul li {
     padding: 0.8em 0;
     color: grey;
     font-size: 0.8em;
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
-ul h4 {
+
+ul {
+    overflow-y: auto;
+    max-height: 300px;
+}
+.add-playlist h4 {
     padding: 0.8em 0;
+    margin-left: 1rem;
 }
 
 .btn-add i{
@@ -95,6 +101,7 @@ ul h4 {
     margin-bottom: 1em;
     font-size: 0.8em;
     font-weight: bold;
+    margin-left: 1rem;
 }
 
 .bottom-nav {
@@ -204,9 +211,7 @@ main {
 .circle-image{
     border-radius: 50%;
     overflow: hidden;
-    width: 255.833px;
-    height: 255.833px;
-    margin: 0 auto;
+    width: 100%;
     margin-right: 1em;
     margin-bottom: 1em;
 }
@@ -236,25 +241,39 @@ footer {
 /* LEFT */
 
 .footer-left {
-    height: 60%;
-    margin-left: 1em;
     width: 20%;
+    height: 100%;
+    margin-left: 1em;
 }
 
-.footer-left * {
+.current-playing {
+    width: 50%;
+    height: calc(100% - 1em);
+}
+
+.current-playing img {
+    height: 100%;
+    padding: 1em 0;
+    margin-right: 1em;
+}
+
+.artist-name h4 {
+    display: inline-block;
+}
+.artist-name {
     display: inline-block;
 }
 
-.footer-left h4 {
+/* .footer-left h4 {
     display: block;
 }
 
 .footer-left img {
-    height: 100%;
+    height: 60%;
     margin-right: 1em;
 }
 
-.footer-left span {
+.track-name {
     margin-right: 2.5em;
 }
 
@@ -265,33 +284,29 @@ footer {
 .footer-left i {
     margin-right: 1em;
     font-size: 20px;
-}
+} */
 
 
 
 /* CENTER */
 
 .footer-center {
-    width: 60%;
+    width: calc(100% / 3);
     height: 100%;
     margin: 0 auto;
 }
 
 .play-buttons {
-    width: 50%;
-    text-align: center;
-    font-size: 1.6em;
-    height: 50%;
-    margin-top: 0.5em;
+    font-size: 1.6rem;
+    margin-top: 1rem;
 }
 
 .play-buttons i {
-    padding: 0 15px;
+    padding-right: 1rem;
 }
 
 #play-button {
     font-size: 1.5em;
-    padding: 0 20px;
 }
 
 .play-timeline {
@@ -332,6 +347,8 @@ footer {
 
 .footer-right {
     width: 20%;
+    height: 100%;
+    margin-right: 1em;
 }
 
 .grey-vol-line {
@@ -339,8 +356,6 @@ footer {
     width: 50%;
     height: 6px;
     border-radius: 25px;
-    align-self: center;
-    margin-right: 2em;
 }
 
 .lightgrey-vol-line {
@@ -348,7 +363,6 @@ footer {
     width: 40%;
     height: 6px;
     border-radius: 25px;
-    position: relative;
 }
 
 .circle-vol {
