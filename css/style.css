@@ -58,6 +58,12 @@ nav {
 
 .nav-section {
     margin-left: 1em;
+    
+}
+
+
+#home {
+    border-left: 3px solid green;
 }
 
 .nav-section-name {
@@ -123,6 +129,7 @@ ul {
 
 .install-app {
     margin-bottom: 1em;
+    color: grey;
 }
 
 .fa-circle-down {
@@ -138,6 +145,33 @@ li i {
 /*********************
  MAIN************
  ********************/
+
+ /* HOVER */
+
+ .btn:hover {
+    scale: 1.05;
+ }
+
+ .cat-type:hover {
+    color: white;
+ }
+
+ .nav-section:hover {
+    color: white;
+ }
+
+ .btn-add:hover {
+    color: white;
+ }
+
+ ul>li:hover {
+    color: white;
+ }
+
+ .install-app:hover {
+    color: white;
+ }
+
 
 main {
     height: calc(100% - 100px);
@@ -241,14 +275,14 @@ footer {
 /* LEFT */
 
 .footer-left {
-    width: 20%;
+    width: calc(100% / 3 - 1em);
     height: 100%;
     margin-left: 1em;
 }
 
 .current-playing {
-    width: 50%;
-    height: calc(100% - 1em);
+    height: calc(90% - 1em);
+    margin-right: 1em;
 }
 
 .current-playing img {
@@ -259,6 +293,11 @@ footer {
 
 .artist-name h4 {
     display: inline-block;
+    font-size: 12px;
+}
+
+.artist-name h5 {
+    font-size: 10px;
 }
 .artist-name {
     display: inline-block;
@@ -297,7 +336,7 @@ footer {
 }
 
 .play-buttons {
-    font-size: 1.6rem;
+    font-size: 1rem;
     margin-top: 1rem;
 }
 
@@ -305,12 +344,16 @@ footer {
     padding-right: 1rem;
 }
 
+.play-buttons i:last-child {
+    padding-right: 0;
+}
+
 #play-button {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .play-timeline {
-    width: 60%;
+    width: 100%;
     margin-top: 0.5em;
 }
 
@@ -320,7 +363,7 @@ footer {
     height: 6px;
     border-radius: 25px;
     align-self: center;
-    margin: 0 2em;
+    margin: 0 1em;
 }
 
 .lightgrey-line {
@@ -346,16 +389,18 @@ footer {
 /* RIGHT */
 
 .footer-right {
-    width: 20%;
+    width: calc(100% / 3 - 1em);
     height: 100%;
     margin-right: 1em;
+    justify-content: flex-end;
 }
 
 .grey-vol-line {
     background-color: #5a5a5a;
-    width: 50%;
+    width: 8em;
     height: 6px;
     border-radius: 25px;
+    margin-left: 1em;
 }
 
 .lightgrey-vol-line {
@@ -363,6 +408,7 @@ footer {
     width: 40%;
     height: 6px;
     border-radius: 25px;
+    
 }
 
 .circle-vol {
@@ -377,10 +423,9 @@ footer {
 }
 
 .footer-right i {
-    padding: 0 0.8em;
+    
 }
 
 .footer-icons {
     text-align: center;
-    width: 50%;
 }
