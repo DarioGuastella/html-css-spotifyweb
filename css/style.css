@@ -52,6 +52,11 @@ nav {
     padding: 1em;
 }
 
+.top-nav {
+    height: 80%;
+    overflow: hidden;
+}
+
 .top-nav-icon {
     width: 10%;
 }
@@ -152,26 +157,38 @@ li i {
     scale: 1.05;
  }
 
- .cat-type:hover {
+ .cat-type:hover,
+ .nav-section:hover,
+ .btn-add:hover,
+ ul>li:hover,
+ .install-app:hover,
+ #favourite:hover,
+ #library:hover
+  {
     color: white;
  }
 
- .nav-section:hover {
+ .track-name:hover {
     color: white;
+    text-decoration: underline;
  }
 
- .btn-add:hover {
-    color: white;
+
+ .grey-line:hover .lightgrey-line,
+ .grey-vol-line:hover .lightgrey-vol-line {
+    background-color: greenyellow;
  }
 
- ul>li:hover {
-    color: white;
+ .grey-line:hover .circle-line,
+ .grey-vol-line:hover .circle-vol {
+    display: block;
  }
 
- .install-app:hover {
-    color: white;
+ #play-button:hover {
+    scale: 1.15;
  }
 
+ /* FINE HOVER */
 
 main {
     height: calc(100% - 100px);
@@ -303,6 +320,18 @@ footer {
     display: inline-block;
 }
 
+.track-name {
+    color: grey;
+}
+
+#favourite  {
+    color: grey;
+}
+
+#library {
+    color: grey;
+}
+
 /* .footer-left h4 {
     display: block;
 }
@@ -381,7 +410,7 @@ footer {
     border-radius: 50%;
     position: absolute;
     top: -4.5px;
-    left: 112px;
+    left: 108px;
     display: none;
 }
 
@@ -416,9 +445,9 @@ footer {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    position: absolute;
+    position: relative;
     top: -4.5px;
-    left: 55px;
+    left: 46px;
     display: none;
 }
 
