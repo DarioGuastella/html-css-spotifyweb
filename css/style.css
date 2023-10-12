@@ -536,6 +536,7 @@ footer {
 
     .top-nav {
         text-align: center;
+        margin-top: 2em;
     }
 
     .top-nav-icon {
@@ -576,6 +577,7 @@ footer {
         width: 48px;
         height: 48px;
         margin: 0;
+        scale: 0.6;
     }
 
     .fa-circle-down {
