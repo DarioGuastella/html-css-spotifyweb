@@ -52,6 +52,10 @@ nav {
     padding: 1em;
 }
 
+.small-logo {
+    display: none;
+}
+
 .top-nav {
     height: 80%;
     overflow: hidden;
@@ -223,7 +227,7 @@ main {
 }
 
 .category {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     min-height: 70px;
     text-align: center;
@@ -236,6 +240,14 @@ main {
     display: inline-block;
     font-size: 1em;
     font-weight: 600;
+}
+
+#actived:after {
+    content: "";
+    display: block;
+    width: 42%;
+     margin: 0.3em auto 0;
+    border-bottom: solid greenyellow;
 }
 
 .container-main {
@@ -480,4 +492,99 @@ footer {
 .footer-icons {
     text-align: center;
 }
+
+
+/******************************************************************
+**************************RESPONSIVE*******************************
+******************************************************************/
+
+/* NORMAL DESKTOP  */
+
+@media screen and (max-width: 992px){
+    .content-card {
+        width: calc(100% / 4 - 1em);
+    }    
+}
+
+@media screen and (max-width: 768px){
+    .content-card {
+        width: calc(100% / 2 - 1em);
+    }    
+}
+
+@media screen and (max-width: 576px){
+    .nav-section-name {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .small-logo {
+        display: inline-block;
+        width: 60%;
+    }
+    .nav-section {
+        margin: 0;
+        display: inline-block;
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    #home {
+        border: none;
+    }
+
+    .top-nav {
+        text-align: center;
+    }
+
+    .top-nav-icon {
+        width: 60%;
+    }
+
+    .add-playlist {
+        display: none;
+    }
+
+    .top-nav ul {
+        display: none;
+    }
+
+    .bottom-nav {
+        margin: 0;
+    }
+
+    .bottom-nav h5 {
+        display: none;
+    }
+    .bottom-nav h4 {
+        display: none;
+    }
+
+    .bottom-nav hr {
+        display: none;
+    }
+    
+    nav {
+        width: 3rem;
+    }
+    main {
+        width: calc(100% - 3em);
+    }
+
+    .user-circle-image {
+        width: 48px;
+        height: 48px;
+        margin: 0;
+    }
+
+    .fa-circle-down {
+        margin: 0;
+    }
+    .install-app {
+        text-align: center;
+    }
+      
+}
+
 
