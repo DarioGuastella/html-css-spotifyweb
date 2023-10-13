@@ -299,6 +299,7 @@ main {
     width: 100%;
     margin-right: 1em;
     margin-bottom: 1em;
+    height: 80%;
 }
 
 .circle-image img{
@@ -366,30 +367,6 @@ footer {
 #library {
     color: grey;
 }
-
-/* .footer-left h4 {
-    display: block;
-}
-
-.footer-left img {
-    height: 60%;
-    margin-right: 1em;
-}
-
-.track-name {
-    margin-right: 2.5em;
-}
-
-.footer-left h5 {
-    color: grey;
-}
-
-.footer-left i {
-    margin-right: 1em;
-    font-size: 20px;
-} */
-
-
 
 /* CENTER */
 
@@ -513,11 +490,15 @@ footer {
     }    
 }
 
+/* TABLET */
+
 @media screen and (max-width: 768px){
     .content-card {
         width: calc(100% / 2 - 1em);
     }    
 }
+
+/* MOBILE */
 
 @media screen and (max-width: 576px){
     .nav-section-name {
@@ -550,27 +531,16 @@ footer {
         width: 60%;
     }
 
-    .add-playlist {
-        display: none;
-    }
-
-    .top-nav ul {
+    .add-playlist,
+    .top-nav ul,
+    .bottom-nav h5,
+    .bottom-nav h4,
+    .bottom-nav hr {
         display: none;
     }
 
     .bottom-nav {
         margin: 0;
-    }
-
-    .bottom-nav h5 {
-        display: none;
-    }
-    .bottom-nav h4 {
-        display: none;
-    }
-
-    .bottom-nav hr {
-        display: none;
     }
     
     nav {
